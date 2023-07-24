@@ -8,28 +8,20 @@
 
 from src.capitalize import capitalize
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Функция работает неверно!')
+assert capitalize('hello') == 'Hello'
 
-if capitalize('') != '':
-    raise Exception('Функция работает неверно!')
+assert capitalize('') == ''
 
-if capitalize('Hello') != 'Hello':
-    raise Exception('Функция работает неверно!')
+assert capitalize('Hello') == 'Hello'
 
-if capitalize('h') != 'H':
-    raise Exception('Функция работает неверно!')
+assert capitalize('h') == 'H'
 
-if capitalize('123') != '123':
-    raise Exception('Функция работает неверно!')
+assert capitalize('123') == '123'
 
-if capitalize('привет') != 'Привет':
-    raise Exception('Функция работает неверно!')
+assert capitalize('привет') == 'Привет'
 
-if capitalize(' text') != ' text':
-    raise Exception('Функция работает неверно!')
+assert capitalize(' text') == ' text'
 
-if capitalize(123) != 123:
-    raise Exception('Функция работает неверно!')
+assert capitalize(123) == 123
 
 print('Все тесты пройдены!')
